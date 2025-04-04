@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" id="main-html">
+<head id="document-head">
+    <meta charset="UTF-8" id="charset-meta">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewport-meta">
+    <title id="page-title">LegisFlow - Your AI-Powered Contract & Policy Architect</title>
+    <link rel="stylesheet" href="style.css" id="main-stylesheet">
+    <!-- Everloop A/B Testing & Analytics Scripts -->
+    <script src="http://localhost:8089/dynamic-ux.min.js?api_key=fe4ad888-f567-4f96-8c1f-f7911a4c795b"></script>
+</head>
+<body id="main-body">
+    <!-- Demo Popup -->
+    <div id="demo-popup" class="demo-popup">
+        <div id="demo-popup-content" class="demo-popup-content">
+            <button id="close-popup" class="close-popup">×</button>
+            <h2 id="demo-popup-heading">Try LegisFlow <span id="demo-highlight" class="highlight">Today!</span> 🚀</h2>
+            <p id="demo-popup-description">See how AI can transform your legal document creation in minutes.</p>
+            <div id="popup-emoji" class="popup-emoji">🤖📝⚖️</div>
+            <form id="popup-demo-form">
+                <input type="text" id="popup-name" name="name" placeholder="Your Name" required>
+                <input type="email" id="popup-email" name="email" placeholder="Your Email" required>
+                <input type="text" id="popup-company" name="company" placeholder="Your Company">
+                <button type="submit" id="popup-submit" class="pulse-button">Get Your Demo</button>
+            </form>
+            <p id="popup-small-text" class="small-text">No credit card required. Instant access!</p>
+        </div>
+    </div>
+    
+    <header id="main-header">
+        <h1 id="site-title">LegisFlow</h1>
+        <p id="site-tagline">"Custom Contracts & Policies in Minutes—Legally Sound, AI-Powered."</p>
+        <nav id="main-nav" class="main-nav">
+            <a href="index.html" id="home-link" class="nav-link active">Home</a>
+            <a href="how-it-works.html" id="how-it-works-link" class="nav-link">How It Works</a>
+        </nav>
+    </header>
+
+    <section id="problem">
+        <h2 id="problem-heading">Problem Statement</h2>
+        <p id="problem-description">Small businesses, startups, and freelancers struggle with drafting legal documents such as contracts, policies, and compliance agreements. Hiring a lawyer is expensive, while generic online templates are often inadequate and lack customization.</p>
+    </section>
+
+    <section id="solution">
+        <h2 id="solution-heading">Solution</h2>
+        <p id="solution-description">LegisFlow is an AI-driven platform that generates customized, legally sound contracts and policies tailored to a business’s specific needs in minutes. It ensures compliance with regional laws and allows for real-time modifications with human-in-the-loop verification.</p>
+        <div id="solution-cta" class="cta-container">
+            <a href="how-it-works.html" id="learn-more-button" class="cta-button">Learn How It Works</a>
+        </div>
+    </section>
+
+    <!-- How It Works section moved to how-it-works.html -->
+
+    <section id="target-market">
+        <h2 id="market-heading">Target Market</h2>
+        <ul id="market-list">
+            <li id="market-item-1">Startups & SMBs</li>
+            <li id="market-item-2">Freelancers & Agencies</li>
+            <li id="market-item-3">Legal Professionals (as an assistive tool)</li>
+            <li id="market-item-4">HR & Compliance Teams</li>
+            <li id="market-item-5">SaaS Companies (for user agreements)</li>
+        </ul>
+    </section>
+
+    <section id="monetization">
+        <h2 id="monetization-heading">Monetization Model</h2>
+        <ul id="monetization-list">
+            <li id="monetization-item-1">Freemium Model (Basic contracts are free, advanced customization requires payment)</li>
+            <li id="monetization-item-2">Subscription Plans ($29-$99/month for unlimited contracts & compliance checks)</li>
+            <li id="monetization-item-3">Pay-Per-Document (One-time fee per document, e.g., $9.99 per contract)</li>
+            <li id="monetization-item-4">Marketplace for Lawyers (Connect businesses with legal professionals for expert reviews)</li>
+        </ul>
+    </section>
+
+    <section id="competitive-advantage">
+        <h2 id="advantage-heading">Competitive Advantage</h2>
+        <ul id="advantage-list">
+            <li id="advantage-item-1">✅ Faster & Cheaper than hiring a lawyer</li>
+            <li id="advantage-item-2">✅ More Customizable than static templates</li>
+            <li id="advantage-item-3">✅ AI-Powered Risk Analysis & Negotiation</li>
+            <li id="advantage-item-4">✅ Compliance-Aware & Adaptive to legal updates</li>
+        </ul>
+    </section>
+
+    <section id="tech-stack">
+        <h2 id="tech-heading">Tech Stack</h2>
+        <p id="tech-frontend">Frontend: React (Next.js)</p>
+        <p id="tech-backend">Backend: FastAPI (Python)</p>
+        <p id="tech-llm">LLM: Fine-tuned OpenAI GPT-4 / Llama for legal text generation</p>
+        <p id="tech-database">Database: MongoDB for storing contracts and user history</p>
+        <p id="tech-integrations">Integrations: Zapier, Notion, DocuSign</p>
+    </section>
+
+    <section id="future-additions">
+        <h2 id="future-heading">Scalability & Future Additions</h2>
+        <ul id="future-list">
+            <li id="future-item-1">Multilingual Contracts (Auto-translation for global use)</li>
+            <li id="future-item-2">Blockchain-Based Smart Contracts (For automated execution)</li>
+            <li id="future-item-3">Voice-to-Contract AI (Generate contracts via voice input)</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2 id="contact-heading">Get in Touch</h2>
+        <form id="contact-form">
+            <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+            <input type="email" id="contact-email" name="email" placeholder="Your Email" required>
+            <textarea id="contact-message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" id="contact-submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Removing the standalone demo section and adding a floating demo button instead -->
+    <div class="floating-demo-btn" id="show-demo-popup">
+        <span id="demo-button-text">Try Demo</span>
+    </div>
+
+    <footer id="page-footer">
+        <p id="copyright">© 2024 LegisFlow. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" id="main-script"></script>
+</body>
+</html>

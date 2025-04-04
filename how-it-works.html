@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" id="how-it-works-page">
+<head id="page-head">
+    <meta charset="UTF-8" id="charset-meta">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewport-meta">
+    <title id="page-title">How It Works - LegisFlow</title>
+    <link rel="stylesheet" href="style.css" id="main-stylesheet">
+    <link rel="stylesheet" href="process.css" id="process-stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" id="font-awesome-stylesheet">
+    <!-- Everloop A/B Testing & Analytics Scripts -->
+    <script src="https://cdn.everloop.so/dynamic-ux.min.js?api_key=69fb4164-4ae3-4474-aa5d-1afe6856d152" id="everloop-script"></script>
+</head>
+<body id="page-body">
+    <header id="page-header">
+        <h1 id="site-title">LegisFlow</h1>
+        <p id="site-tagline">"Custom Contracts & Policies in Minutes—Legally Sound, AI-Powered."</p>
+        <nav class="main-nav" id="main-navigation">
+            <a href="index.html" class="nav-link" id="home-nav-link">Home</a>
+            <a href="how-it-works.html" class="nav-link active" id="how-it-works-nav-link">How It Works</a>
+        </nav>
+    </header>
+
+    <section id="how-it-works" class="page-section">
+        <h2 id="how-it-works-title">How It Works</h2>
+        
+        <!-- Process Steps Visualization -->
+        <div class="process-container" id="process-container">
+            <div class="process-tabs" id="process-tabs">
+                <button class="process-tab active" data-step="1" id="step1-tab">Step 1</button>
+                <button class="process-tab" data-step="2" id="step2-tab">Step 2</button>
+                <button class="process-tab" data-step="3" id="step3-tab">Step 3</button>
+                <button class="process-tab" data-step="4" id="step4-tab">Step 4</button>
+                <button class="process-tab" data-step="5" id="step5-tab">Step 5</button>
+                <button class="process-tab" data-step="6" id="step6-tab">Step 6</button>
+            </div>
+            
+            <div class="process-content" id="process-content">
+                <div class="process-step active" data-step="1" id="step1-content">
+                    <div class="step-content" id="step1-inner-content">
+                        <div class="step-icon" id="step1-icon">🤖</div>
+                        <h3 id="step1-heading">AI-Assisted Drafting</h3>
+                        <p id="step1-description">Users enter key details (e.g., parties involved, contract duration, obligations, and exclusions). AI generates a fully customized contract, not just a template.</p>
+                        <div class="step-animation" id="step1-animation">
+                            <div class="typing-animation" id="typing-animation">
+                                <span class="typing-text" id="typing-text">Generating your contract...</span>
+                                <span class="cursor" id="typing-cursor">|</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-step="2" id="step2-content">
+                    <div class="step-content" id="step2-inner-content">
+                        <div class="step-icon" id="step2-icon">✅</div>
+                        <h3 id="step2-heading">Compliance Check & Legal Refinement</h3>
+                        <p id="step2-description">The AI ensures legal soundness based on the jurisdiction. It suggests modifications to ensure compliance with GDPR, CCPA, NDA laws, etc.</p>
+                        <div class="step-animation" id="step2-animation">
+                            <div class="compliance-check" id="compliance-check">
+                                <div class="check-item" id="check-item1"><i class="fas fa-check-circle" id="check-icon1"></i> GDPR Compliant</div>
+                                <div class="check-item" id="check-item2"><i class="fas fa-check-circle" id="check-icon2"></i> CCPA Compliant</div>
+                                <div class="check-item" id="check-item3"><i class="fas fa-check-circle" id="check-icon3"></i> Industry Standards</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-step="3" id="step3-content">
+                    <div class="step-content" id="step3-inner-content">
+                        <div class="step-icon" id="step3-icon">👨‍⚖️</div>
+                        <h3 id="step3-heading">Human-in-the-Loop Review</h3>
+                        <p id="step3-description">Users can choose on-demand legal experts to review and validate the document. AI provides explanations for each clause for better transparency.</p>
+                        <div class="step-animation" id="step3-animation">
+                            <div class="expert-review" id="expert-review">
+                                <div class="expert-profile" id="expert-profile">
+                                    <div class="expert-avatar" id="expert-avatar"><i class="fas fa-user-tie" id="expert-icon"></i></div>
+                                    <div class="expert-info" id="expert-info">
+                                        <span id="expert-title">Legal Expert</span>
+                                        <div class="expert-rating" id="expert-rating">
+                                            <i class="fas fa-star" id="star1"></i>
+                                            <i class="fas fa-star" id="star2"></i>
+                                            <i class="fas fa-star" id="star3"></i>
+                                            <i class="fas fa-star" id="star4"></i>
+                                            <i class="fas fa-star-half-alt" id="star5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-step="4" id="step4-content">
+                    <div class="step-content" id="step4-inner-content">
+                        <div class="step-icon" id="step4-icon">📝</div>
+                        <h3 id="step4-heading">AI-Powered Redlining & Negotiation</h3>
+                        <p id="step4-description">AI can compare different versions of contracts and suggest optimized clauses for better negotiations. Businesses can collaborate with counterparties in real time.</p>
+                        <div class="step-animation" id="step4-animation">
+                            <div class="redline-animation" id="redline-animation">
+                                <div class="document" id="redline-document">
+                                    <div class="line added" id="added-line">+ Added clause for protection</div>
+                                    <div class="line" id="unchanged-line">Unchanged clause</div>
+                                    <div class="line removed" id="removed-line">- Removed unfavorable terms</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-step="5" id="step5-content">
+                    <div class="step-content" id="step5-inner-content">
+                        <div class="step-icon" id="step5-icon">📋</div>
+                        <h3 id="step5-heading">Automated Policy Generation</h3>
+                        <p id="step5-description">Businesses can generate employee policies, NDAs, Privacy Policies, and Terms of Service instantly. Integration with HR and compliance tools.</p>
+                        <div class="step-animation" id="step5-animation">
+                            <div class="document-generation" id="document-generation">
+                                <div class="document-item" id="doc-item1"><i class="fas fa-file-alt" id="doc-icon1"></i> Privacy Policy</div>
+                                <div class="document-item" id="doc-item2"><i class="fas fa-file-alt" id="doc-icon2"></i> Terms of Service</div>
+                                <div class="document-item" id="doc-item3"><i class="fas fa-file-alt" id="doc-icon3"></i> Employee Handbook</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-step="6" id="step6-content">
+                    <div class="step-content" id="step6-inner-content">
+                        <div class="step-icon" id="step6-icon">📊</div>
+                        <h3 id="step6-heading">Smart Contract Readability & Risk Scoring</h3>
+                        <p id="step6-description">AI summarizes long legal documents into human-readable insights. It assigns risk scores to highlight unfavorable terms.</p>
+                        <div class="step-animation" id="step6-animation">
+                            <div class="risk-scoring" id="risk-scoring">
+                                <div class="risk-meter" id="risk-meter">
+                                    <div class="risk-label" id="risk-label">Low Risk</div>
+                                    <div class="risk-bar" id="risk-bar">
+                                        <div class="risk-level" id="risk-level" style="width: 25%;"></div>
+                                    </div>
+                                </div>
+                                <div class="summary-points" id="summary-points">
+                                    <div class="summary-item" id="summary-item1"><i class="fas fa-check" id="summary-icon1"></i> Clear termination clauses</div>
+                                    <div class="summary-item" id="summary-item2"><i class="fas fa-check" id="summary-icon2"></i> Fair payment terms</div>
+                                    <div class="summary-item" id="summary-item3"><i class="fas fa-exclamation-triangle" id="summary-icon3"></i> Long notice period</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-navigation" id="process-navigation">
+                <button class="nav-btn prev-btn" disabled id="prev-btn"><i class="fas fa-arrow-left" id="prev-icon"></i> Previous</button>
+                <div class="step-indicators" id="step-indicators">
+                    <span class="step-dot active" data-step="1" id="step-dot1"></span>
+                    <span class="step-dot" data-step="2" id="step-dot2"></span>
+                    <span class="step-dot" data-step="3" id="step-dot3"></span>
+                    <span class="step-dot" data-step="4" id="step-dot4"></span>
+                    <span class="step-dot" data-step="5" id="step-dot5"></span>
+                    <span class="step-dot" data-step="6" id="step-dot6"></span>
+                </div>
+                <button class="nav-btn next-btn" id="next-btn">Next <i class="fas fa-arrow-right" id="next-icon"></i></button>
+            </div>
+        </div>
+
+        <div class="back-to-home" id="back-to-home">
+            <a href="index.html" class="cta-button" id="back-home-btn">Back to Home</a>
+        </div>
+    </section>
+
+    <!-- Floating demo button -->
+    <div class="floating-demo-btn" id="show-demo-popup">
+        <span id="demo-btn-text">Try Demo</span>
+    </div>
+
+    <!-- Demo Popup -->
+    <div id="demo-popup" class="demo-popup">
+        <div class="demo-popup-content" id="demo-popup-content">
+            <button id="close-popup" class="close-popup">×</button>
+            <h2 id="popup-heading">Try LegisFlow <span class="highlight" id="popup-highlight">Today!</span> 🚀</h2>
+            <p id="popup-description">See how AI can transform your legal document creation in minutes.</p>
+            <div class="popup-emoji" id="popup-emoji">🤖📝⚖️</div>
+            <form id="popup-demo-form">
+                <input type="text" name="name" placeholder="Your Name" required id="popup-name">
+                <input type="email" name="email" placeholder="Your Email" required id="popup-email">
+                <input type="text" name="company" placeholder="Your Company" id="popup-company">
+                <button type="submit" class="pulse-button" id="popup-submit">Get Your Demo</button>
+            </form>
+            <p class="small-text" id="popup-small-text">No credit card required. Instant access!</p>
+        </div>
+    </div>
+
+    <footer id="page-footer">
+        <p id="copyright">© 2024 LegisFlow. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" id="main-script"></script>
+    <script src="how-it-works.js" id="how-it-works-script"></script>
+</body>
+</html>

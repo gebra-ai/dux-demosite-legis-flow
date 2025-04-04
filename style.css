@@ -1,0 +1,716 @@
+:root {
+  --primary-color: #0056b3;
+  --primary-dark: #003d82;
+  --secondary-color: #2ecc71;
+  --accent-color: #f39c12;
+  --text-color: #333;
+  --light-bg: #f8f9fa;
+  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all var(--transition-speed) ease;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  animation: pulse 10s infinite;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: fadeInDown 1s;
+}
+
+header p {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 1s 0.3s both;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  padding: 2.5rem;
+  margin: 2rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#how-it-works {
+  display: block;
+}
+
+#how-it-works div {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: none;
+  border-left: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#how-it-works div:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+#how-it-works h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+#how-it-works h3::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 60px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  transition: width 0.3s ease;
+}
+
+section:hover h2::after {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 0.7rem 0;
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+#competitive-advantage li:before {
+  content: "✓";
+  color: var(--secondary-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.2);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
+  margin-top: 3rem;
+}
+
+/* Target Market & Monetization styling */
+#target-market, #monetization {
+  position: relative;
+  overflow: hidden;
+}
+
+#target-market ul, #monetization ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+#target-market li, #monetization li {
+  background-color: rgba(0, 86, 179, 0.05);
+  padding: 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+#target-market li:hover, #monetization li:hover {
+  background-color: rgba(0, 86, 179, 0.1);
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+  }
+  
+  section {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  #how-it-works {
+    grid-template-columns: 1fr;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Add this to the end of your CSS file to add scroll reveal effect */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add this to your existing CSS file */
+
+.floating-demo-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 99;
+    transition: all 0.3s ease;
+}
+
+.floating-demo-btn:hover {
+    background-color: #3e8e41;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+}
+
+.demo-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-popup.show {
+    display: flex;
+}
+
+.demo-popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+}
+
+.close-popup:hover {
+    color: #333;
+}
+
+.pulse-button {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+}
+
+.popup-emoji {
+    text-align: center;
+    font-size: 3rem;
+    margin: 20px 0;
+    line-height: 1;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    animation: floatEmoji 3s infinite ease-in-out;
+}
+
+@keyframes floatEmoji {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Carousel styling for "How It Works" section */
+.carousel-section {
+  padding: 2.5rem;
+  margin: 2rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  border-left: 4px solid var(--primary-color);
+  transition: opacity 0.3s ease;
+}
+
+.carousel-slide h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.carousel-slide h3::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+}
+
+.carousel-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.carousel-prev, .carousel-next {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: var(--primary-dark);
+  transform: scale(1.1);
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carousel-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-indicator.active {
+  background-color: var(--primary-color);
+  transform: scale(1.2);
+}
+
+/* Media queries for responsive carousel */
+@media (max-width: 768px) {
+  .carousel-slide {
+    padding: 1.5rem;
+  }
+  
+  .carousel-prev, .carousel-next {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  .carousel-indicator {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Fix carousel styling */
+.how-it-works-carousel .carousel-item {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.how-it-works-carousel .carousel-item.active {
+  display: block;
+  opacity: 1;
+}
+
+.how-it-works-carousel .carousel-control-next,
+.how-it-works-carousel .carousel-control-prev {
+  cursor: pointer;
+}
+
+/* Ensure no blank slides are shown */
+.how-it-works-carousel .carousel-inner {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* New Card Layout for How It Works Section */
+.how-it-works-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.card h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin-top: auto;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .how-it-works-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Remove old carousel styles that are no longer needed */
+.carousel-section,
+.how-it-works-carousel .carousel-item,
+.how-it-works-carousel .carousel-control-next,
+.how-it-works-carousel .carousel-control-prev,
+.how-it-works-carousel .carousel-inner {
+  /* Leaving these selectors but not deleting all the carousel styles
+     in case they're needed elsewhere */
+}
+
+/* Navigation styling */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--secondary-color);
+  border-radius: 1.5px;
+}
+
+/* CTA Button styling */
+.cta-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(46, 204, 113, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #27ae60;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(46, 204, 113, 0.4);
+}
+
+.cta-button:active {
+  transform: translateY(-1px);
+}
+
+/* Back to home link styling */
+.back-to-home {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/* Page section styling */
+.page-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+/* Highlight class for demo popup */
+.highlight {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+/* Small text class */
+.small-text {
+  font-size: 0.85rem;
+  color: #777;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Media queries for responsive navigation */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .nav-link {
+    text-align: center;
+  }
+}

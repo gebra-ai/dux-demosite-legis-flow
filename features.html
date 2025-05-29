@@ -6,8 +6,6 @@
     <title>LegisFlow Features - AI-Powered Contract & Policy Solutions</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="features.css">
-    <!-- Everloop Marketing & Analytics Scripts -->
-    <script src="https://cdn.everloop.so/dynamic-ux.min.js?org_id=c2149d84-b4ef-414b-a14d-23f32d011027"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-71PFE2G4LC"></script>
     <script>
@@ -17,6 +15,23 @@
 
       gtag('config', 'G-71PFE2G4LC');
     </script>
+<!-- Everloop SDK Loader -->
+<script>
+const style = document.createElement("style");
+style.innerHTML = "body { opacity: 0 !important; }";
+const cfhide = () => document.head.appendChild(style);
+const cfshow = () => style.remove();
+cfhide();
+setTimeout(cfshow, 2000);
+document.addEventListener("everloop:show", cfshow);
+window.EFQ = window.EFQ || [];
+window.EFQ.push({
+  config: {
+    campaignId: "548144e8-7fe6-4e3c-b3d7-09f9f2b45041",
+  },
+});
+</script>
+<script async src="https://cdn.gebra.ai/everloop.min.js?campaign_id=548144e8-7fe6-4e3c-b3d7-09f9f2b45041"></script>
 </head>
 <body>
     <header class="bg-white shadow-sm">

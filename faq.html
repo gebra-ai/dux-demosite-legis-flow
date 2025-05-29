@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegisFlow - Frequently Asked Questions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-xl font-bold text-blue-600">LegisFlow</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a></li>
+                    <li><a href="features.html" class="text-gray-600 hover:text-blue-600">Features</a></li>
+                    <li><a href="pricing.html" class="text-gray-600 hover:text-blue-600">Pricing</a></li>
+                    <li><a href="faq.html" class="text-blue-600 font-medium">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h1>
+                
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="border-b pb-4">
+                        <button class="flex w-full justify-between items-center text-left font-medium text-lg" onclick="toggleFAQ(this)">
+                            <span>What is LegisFlow?</span>
+                            <svg class="h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-2 hidden text-gray-600">
+                            <p>LegisFlow is a comprehensive legislative tracking platform that helps organizations monitor bills, engage with legislators, and stay informed about policy developments that matter to their interests.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-b pb-4">
+                        <button class="flex w-full justify-between items-center text-left font-medium text-lg" onclick="toggleFAQ(this)">
+                            <span>How does bill tracking work?</span>
+                            <svg class="h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-2 hidden text-gray-600">
+                            <p>Our platform continuously monitors legislative databases across multiple jurisdictions. You can set up customized alerts based on keywords, bill numbers, sponsors, or policy areas to receive notifications when there's movement on legislation that matters to you.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-b pb-4">
+                        <button class="flex w-full justify-between items-center text-left font-medium text-lg" onclick="toggleFAQ(this)">
+                            <span>Can I track legislation at both state and federal levels?</span>
+                            <svg class="h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-2 hidden text-gray-600">
+                            <p>Yes, LegisFlow provides tracking capabilities for federal legislation as well as bills across all 50 states, giving you comprehensive coverage of the entire legislative landscape.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-b pb-4">
+                        <button class="flex w-full justify-between items-center text-left font-medium text-lg" onclick="toggleFAQ(this)">
+                            <span>How often is the legislative data updated?</span>
+                            <svg class="h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-2 hidden text-gray-600">
+                            <p>Our system updates in near real-time for federal legislation and multiple times daily for state legislation, ensuring you have the most current information available.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-b pb-4">
+                        <button class="flex w-full justify-between items-center text-left font-medium text-lg" onclick="toggleFAQ(this)">
+                            <span>Do you offer custom reports or data exports?</span>
+                            <svg class="h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-2 hidden text-gray-600">
+                            <p>Yes, all plans include basic reporting features. Advanced and customized reporting options are available on our Pro and Enterprise plans, allowing you to generate tailored analyses and export data in various formats.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-b pb-4">
+                        <button class="flex w-full justify-between items-center text-left font-medium text-lg" onclick="toggleFAQ(this)">
+                            <span>Is there a limit to how many bills I can track?</span>
+                            <svg class="h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-2 hidden text-gray-600">
+                            <p>The number of bills you can track depends on your subscription tier. Basic plans allow up to 10 bills, Pro plans up to 50 bills, and Enterprise plans offer unlimited tracking.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-b pb-4">
+                        <button class="flex w-full justify-between items-center text-left font-medium text-lg" onclick="toggleFAQ(this)">
+                            <span>Can I get a demo before subscribing?</span>
+                            <svg class="h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-2 hidden text-gray-600">
+                            <p>Absolutely! We offer free demonstrations of our platform. Contact our sales team to schedule a personalized demo tailored to your organization's needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center text-gray-500 text-sm">
+                &copy; 2023 LegisFlow. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(element) {
+            const content = element.nextElementSibling;
+            const icon = element.querySelector('svg');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>

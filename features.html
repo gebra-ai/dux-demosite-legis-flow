@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegisFlow Features - AI-Powered Contract & Policy Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="features.css">
+    <!-- Everloop Marketing & Analytics Scripts -->
+    <script src="https://cdn.everloop.so/dynamic-ux.min.js?org_id=c2149d84-b4ef-414b-a14d-23f32d011027"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-71PFE2G4LC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-71PFE2G4LC');
+    </script>
+</head>
+<body>
+    <header class="bg-white shadow-sm">
+        <h1 id="site-title">LegisFlow</h1>
+        <p id="site-tagline">"Custom Contracts & Policies in Minutes—Legally Sound, AI-Powered."</p>
+        <nav id="main-nav" class="main-nav">
+                  <a href="index.html" class="nav-link active">Home</a>
+                  <a href="how-it-works.html" id="how-it-works-link" class="nav-link">How It Works</a>
+                  <a href="features.html" class="nav-link active">Features</a>
+                  <a href="pricing.html" class="nav-link active">Pricing</a>
+                  <a href="faq.html" class="nav-link active">FAQ</a>
+        <nav id="main-nav" class="main-nav">
+    </header>
+
+    <section id="features-hero">
+        <h1 class="features-title">Powerful Features That Simplify Legal Documentation</h1>
+        <p class="features-subtitle">Explore the tools that make LegisFlow the ultimate platform for AI-powered legal document creation</p>
+    </section>
+
+    <!-- Interactive Tab Navigation -->
+    <section id="features-tabs">
+        <div class="tabs-container">
+            <div class="tab-nav">
+                <button class="tab-button active" data-tab="document-generation">Document Generation</button>
+                <button class="tab-button" data-tab="ai-analysis">AI Analysis</button>
+                <button class="tab-button" data-tab="compliance">Compliance Tools</button>
+                <button class="tab-button" data-tab="collaboration">Collaboration</button>
+                <button class="tab-button" data-tab="integrations">Integrations</button>
+            </div>
+            
+            <div class="tab-content active" id="document-generation">
+                <h2>Intelligent Document Generation</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📝</div>
+                        <h3>Smart Templates</h3>
+                        <p>Choose from over 100+ legally-vetted templates that adapt to your specific needs</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Context-Aware Generation</h3>
+                        <p>Our AI understands your business context and tailors documents accordingly</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Rapid Creation</h3>
+                        <p>Generate comprehensive legal documents in minutes, not hours or days</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Revision History</h3>
+                        <p>Track all changes with complete document history and version control</p>
+                    </div>
+                </div>
+                <div class="feature-demo">
+                    <h3>See it in action:</h3>
+                    <div class="interactive-demo">
+                        <div class="demo-controls">
+                            <label>Select document type:
+                                <select id="document-type-selector">
+                                    <option value="nda">Non-Disclosure Agreement</option>
+                                    <option value="employment">Employment Contract</option>
+                                    <option value="privacy">Privacy Policy</option>
+                                    <option value="terms">Terms of Service</option>
+                                </select>
+                            </label>
+                            <button id="generate-demo" class="demo-button">Generate Sample</button>
+                        </div>
+                        <div class="demo-output">
+                            <p>Select a document type and click "Generate Sample" to see a preview</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="ai-analysis">
+                <h2>Advanced AI Analysis</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h3>Risk Assessment</h3>
+                        <p>Automatic identification of potential legal risks and vulnerabilities</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚩</div>
+                        <h3>Clause Flagging</h3>
+                        <p>Highlight problematic clauses with suggested improvements</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Negotiation Support</h3>
+                        <p>AI-powered suggestions for negotiation points and alternative language</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Readability Analysis</h3>
+                        <p>Ensure your documents are clear and accessible with readability metrics</p>
+                    </div>
+                </div>
+                <div class="interactive-slider">
+                    <h3>Compare Analysis Levels:</h3>
+                    <div class="slider-container">
+                        <input type="range" min="1" max="3" value="1" class="analysis-slider" id="analysis-level">
+                        <div class="slider-labels">
+                            <span>Basic</span>
+                            <span>Standard</span>
+                            <span>Advanced</span>
+                        </div>
+                    </div>
+                    <div class="analysis-preview">
+                        <div class="analysis-card" id="analysis-preview">
+                            <h4>Basic Analysis</h4>
+                            <ul>
+                                <li>Fundamental legal verification</li>
+                                <li>Spelling and grammar checks</li>
+                                <li>Simple risk assessment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="compliance">
+                <h2>Compliance Tools</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌎</div>
+                        <h3>Multi-Jurisdiction Compliance</h3>
+                        <p>Automatically adapt documents to comply with different regional laws</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔔</div>
+                        <h3>Compliance Alerts</h3>
+                        <p>Stay updated with regulatory changes affecting your documents</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✅</div>
+                        <h3>Compliance Checklists</h3>
+                        <p>Comprehensive verification lists for different document types</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📋</div>
+                        <h3>Audit-Ready Reports</h3>
+                        <p>Generate compliance reports to demonstrate due diligence</p>
+                    </div>
+                </div>
+                <div class="interactive-map">
+                    <h3>Global Compliance Coverage:</h3>
+                    <div class="map-container">
+                        <div class="map-regions">
+                            <button class="region-button" data-region="us">United States</button>
+                            <button class="region-button" data-region="eu">European Union</button>
+                            <button class="region-button" data-region="uk">United Kingdom</button>
+                            <button class="region-button" data-region="aus">Australia</button>
+                            <button class="region-button" data-region="can">Canada</button>
+                        </div>
+                        <div class="region-info" id="region-details">
+                            <p>Select a region to see compliance features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="collaboration">
+                <h2>Seamless Collaboration</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Team Access</h3>
+                        <p>Collaborate with your entire team with role-based permissions</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💬</div>
+                        <h3>In-Document Comments</h3>
+                        <p>Discuss specific clauses directly within documents</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✍️</div>
+                        <h3>Redlining & Markup</h3>
+                        <p>Professional redlining tools for document reviews</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Mobile Access</h3>
+                        <p>Review, comment, and approve on any device</p>
+                    </div>
+                </div>
+                <div class="collaboration-demo">
+                    <h3>Collaboration Preview:</h3>
+                    <div class="workflow-demo">
+                        <div class="workflow-steps">
+                            <div class="workflow-step active" id="step1">
+                                <div class="step-number">1</div>
+                                <div class="step-label">Draft Creation</div>
+                            </div>
+                            <div class="workflow-connector"></div>
+                            <div class="workflow-step" id="step2">
+                                <div class="step-number">2</div>
+                                <div class="step-label">Team Review</div>
+                            </div>
+                            <div class="workflow-connector"></div>
+                            <div class="workflow-step" id="step3">
+                                <div class="step-number">3</div>
+                                <div class="step-label">Legal Verification</div>
+                            </div>
+                            <div class="workflow-connector"></div>
+                            <div class="workflow-step" id="step4">
+                                <div class="step-number">4</div>
+                                <div class="step-label">Approval & Signing</div>
+                            </div>
+                        </div>
+                        <div class="workflow-preview" id="workflow-content">
+                            <h4>Draft Creation</h4>
+                            <p>Initial document generated by AI based on your specifications</p>
+                            <ul>
+                                <li>Answer simple questions about your needs</li>
+                                <li>AI generates custom document draft</li>
+                                <li>Make initial adjustments</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="integrations">
+                <h2>Powerful Integrations</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📑</div>
+                        <h3>DocuSign Integration</h3>
+                        <p>Seamless electronic signature capabilities built-in</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💼</div>
+                        <h3>CRM Connections</h3>
+                        <p>Sync with Salesforce, HubSpot and other CRM platforms</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📁</div>
+                        <h3>Cloud Storage</h3>
+                        <p>Automatic sync with Dropbox, Google Drive, and OneDrive</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Zapier & API</h3>
+                        <p>Connect to thousands of apps or build custom integrations</p>
+                    </div>
+                </div>
+                <div class="integrations-showcase">
+                    <h3>Integration Partners:</h3>
+                    <div class="integration-logos">
+                        <div class="logo-item" data-name="DocuSign">📑</div>
+                        <div class="logo-item" data-name="Salesforce">💼</div>
+                        <div class="logo-item" data-name="Google">📊</div>
+                        <div class="logo-item" data-name="Dropbox">📁</div>
+                        <div class="logo-item" data-name="Slack">💬</div>
+                        <div class="logo-item" data-name="Zapier">🔄</div>
+                        <div class="logo-item" data-name="Notion">📝</div>
+                        <div class="logo-item" data-name="Microsoft">💻</div>
+                    </div>
+                    <div class="integration-details" id="integration-info">
+                        <p>Hover over an icon to learn more about the integration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="features-cta">
+        <div class="cta-container">
+            <h2>Ready to Transform Your Legal Document Process?</h2>
+            <p>Join thousands of businesses creating professional, compliant legal documents in minutes</p>
+            <div class="cta-buttons">
+                <a href="#" class="cta-button primary">Start Free Trial</a>
+                <a href="#" class="cta-button secondary">Schedule Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="page-footer">
+        <p id="copyright">© 2024 LegisFlow. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="features.js"></script>
+</body>
+</html>
